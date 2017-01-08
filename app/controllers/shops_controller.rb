@@ -53,6 +53,6 @@ class ShopsController < ApplicationController
   private
     # Only allow a trusted parameter "white list" through.
     def shop_params
-      params.require(:shop).permit(:name, :address, :website, :hours, :phone_number, :price, :user_id)
+      params.require(:shop).permit(:name, :address, :website, :hours, :phone_number, :price, :user_id, :cafe_image)
     end
 end
