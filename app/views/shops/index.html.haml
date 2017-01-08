@@ -3,13 +3,13 @@
     - @shops.each do |shop|
       .col-sm-6.col-md-6.col-xs-6
         = link_to shop do
-          -#.img-thumbnail{:style => "border:none; background:white;"}
-            -# #.image-container.img
-            -#= image_tag attachment_url(shop, :cover_image), size: "400x300", class: "shop_image"
-          .shop_basic_info
-            = shop.name
-            = shop.address
-            = shop.price
-          %span.p.shop_info
-            Hours
-            = shop.hours
+          .img-thumbnail{:style => "border:none; background:white;"}
+            .image-container.img
+            = image_tag attachment_url(shop, :cafe_image), size: "500x300"
+            %span.h3.shop_basic_info
+              = shop.name
+              = shop.address
+              = shop.price
+            %span.p.shop_info
+              Hours
+              = shop.hours
