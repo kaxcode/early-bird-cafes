@@ -3,10 +3,10 @@ Create a rails app for a cafes in Lakeland, FL.
 - - - - -
 # How #
 * ✅ rails new early-bird-cafes
-* Gem ‘omniauth’ for authorization and authentication / user model
-* Cafe scaffold: $ rails g scaffold shop name address website hours:text phone_number price:integer menu_id cafe_image_id user:references
+* ✅ Gem ‘omniauth’ for authorization and authentication / user model
+* Cafe scaffold: $ rails g scaffold shop name address website hours:text phone_number price:integer user:references
 * Bootstrap Theme (asset pipeline)
-* Gem ‘refile’ for images model/cafe pictures/menus
+* Gem ‘refile’ rails migrate to add menu_id cafe_image_id to shops tables
 * Features/Branches
   - Search/Random select restaurant name
   - Gem ‘Kaminari’ for pagination (limit 4 cafes per page)
