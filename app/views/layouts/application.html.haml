@@ -7,7 +7,7 @@
     %meta{content: "", name: "description"}
     %meta{content: "", name: "author"}
     %title
-      = EarlyBirdCafes
+      Early Bird Cafes
 
     / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
     /[if lt IE 9]
@@ -25,12 +25,21 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          = link_to "#", class: "navbar-brand" do
-            EarlyBirdCafes
+          = link_to "/", class: "navbar-brand" do
+            Early Bird Cafes
         #navbar.collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li.active
-              = link_to "Home", "#"
+              = link_to "New Cafe Shop", new_shop_path
+          %ul.nav.navbar-nav.navbar-right
+            - if logged_in?
+              %li.navbar-text
+                = current_user.name
+              %li
+                = link_to "Logout", logout_path
+            - else
+              %li
+                = link_to 'Login with Github', auth_path(provider: 'github')
     .container
       - flash.each do |name, msg|
         = content_tag :div, class: "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do

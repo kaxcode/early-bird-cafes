@@ -1,4 +1,6 @@
 class ShopsController < ApplicationController
+  before_action :authenticate!, except: [:index, :show]
+
   # GET /shops
   def index
     @shops = Shop.all
@@ -22,6 +24,7 @@ class ShopsController < ApplicationController
   # POST /shops
   def create
     @shop = Shop.new(shop_params)
+    @shop.user_id = logged_in?
 
     if @shop.save
       redirect_to @shop, notice: 'Shop was successfully created.'
