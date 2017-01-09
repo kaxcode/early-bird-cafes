@@ -17,9 +17,6 @@ Create a rails app for a cafes in Lakeland/Tampa/St.Petersburg
 * Features/Branches
   - Search/Random select restaurant name
   - Gem ‘Kaminari’ for pagination (limit 4 cafes per page)
-  - Populate menu (React.js)
-    - $ rails g model Menu 
-  - View hours and phone when hover over restaurant image
 
 - - - - -
 # Results #
