@@ -4,7 +4,7 @@ class ShopsController < ApplicationController
   # GET /shops
   def index
     if params[:name].present?
-      @shops = Shop.where(name: params[:name])
+      @shops = Shop.where(id: params[:name])
     else
       @shops = Shop.all
     end
@@ -20,10 +20,10 @@ class ShopsController < ApplicationController
     @shop = Shop.new
   end
 
-  # GET /shops/1/edit
-  def edit
-    @shop = Shop.find(params[:id])
-  end
+  # # GET /shops/1/edit
+  # def edit
+  #   @shop = Shop.find(params[:id])
+  # end
 
   # POST /shops
   def create
@@ -37,22 +37,22 @@ class ShopsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /shops/1
-  def update
-    @shop = Shop.find(params[:id])
-    if @shop.update(shop_params)
-      redirect_to @shop, notice: 'Shop was successfully updated.'
-    else
-      render :edit
-    end
-  end
-
-  # DELETE /shops/1
-  def destroy
-    @shop = Shop.find(params[:id])
-    @shop.destroy
-    redirect_to shops_url, notice: 'Shop was successfully destroyed.'
-  end
+  # # PATCH/PUT /shops/1
+  # def update
+  #   @shop = Shop.find(params[:id])
+  #   if @shop.update(shop_params)
+  #     redirect_to @shop, notice: 'Shop was successfully updated.'
+  #   else
+  #     render :edit
+  #   end
+  # end
+  #
+  # # DELETE /shops/1
+  # def destroy
+  #   @shop = Shop.find(params[:id])
+  #   @shop.destroy
+  #   redirect_to shops_url, notice: 'Shop was successfully destroyed.'
+  # end
 
   private
     # Only allow a trusted parameter "white list" through.

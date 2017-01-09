@@ -1,22 +1,30 @@
 .page-header
-  = link_to shops_path, class: 'btn btn-default' do
-    %span.glyphicon.glyphicon-list-alt
+  = link_to shops_path, class: 'btn btn-primary' do
     Back
-  = link_to edit_shop_path(@shop), class: 'btn btn-primary' do
-    %span.glyphicon.glyphicon-pencil
-    Edit
-  %h1 Show shop
 
-%dl.dl-horizontal
-  %dt Name:
-  %dd= @shop.name
-  %dt Address:
-  %dd= @shop.address
-  %dt Website:
-  %dd= @shop.website
-  %dt Hours:
-  %dd= @shop.hours
-  %dt Phone number:
-  %dd= @shop.phone_number
-  %dt Price:
-  %dd= price_as_symbol(@shop.price)
+.container
+  .row
+    .col-xs-4.col-sm-4.col-md-4.col-sm-offset-1.col-md-offset-1
+      .panel.panel.default
+        .panel-heading.text-center.style-show-text
+          =@shop.name
+        .ul.list-group.center.style-show-text
+          .li.list-group-item
+            Address:
+            =@shop.address
+          .li.list-group-item.style-show-text
+            Website:
+            =@shop.website
+          .li.list-group-item.style-show-text
+            Hours:
+            =@shop.hours
+          .li.list-group-item.style-show-text
+            Phone Number:
+            =@shop.phone_number
+          .li.list-group-item.style-show-text
+            Price:
+            = price_as_symbol(@shop.price)
+    .col-xs-6.col-sm-6.col-md-6
+      .img-thumbnail{:style => "border:none; background:white;"}
+        .image-container.img
+        = image_tag attachment_url(@shop, :cafe_image), size: "400x300"
