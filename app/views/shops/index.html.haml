@@ -4,13 +4,16 @@
       .col-sm-6.col-md-6.col-xs-6
         = link_to shop do
           .img-thumbnail{:style => "border:none; background:white;"}
-            .image-container.img
-            = image_tag attachment_url(shop, :cafe_image), size: "500x300"
-            %span.h3.shop_basic_info
+            %span.h3.shop_name_info
               = shop.name
-              = shop.address
-              Price:
-              = price_as_symbol(shop.price)
-            %span.p.shop_info
-              Hours:
-              = shop.hours
+            .image-container.img_wrapper
+              = image_tag attachment_url(shop, :cafe_image), size: "520x320"
+              .shop_basic_info.hide
+                .h3
+                  = shop.address
+                .h4
+                  Price:
+                  = price_as_symbol(shop.price)
+                .h4
+                  Hours:
+                  = shop.hours

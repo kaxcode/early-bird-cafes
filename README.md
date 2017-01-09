@@ -15,7 +15,7 @@ Create a rails app for a cafes in Lakeland/Tampa/St.Petersburg
   - create Seed folder to add images for seed.rb file
 * ✅ Create a seed file with some examples
 * Features/Branches
-  - Search/Random select restaurant name
+  - ✅ Search/Random select restaurant name
   - Gem ‘Kaminari’ for pagination (limit 4 cafes per page)
 
 - - - - -

@@ -6,7 +6,7 @@ class ShopsController < ApplicationController
     if params[:name].present?
       @shops = Shop.where(id: params[:name])
     else
-      @shops = Shop.all
+      @shops = Shop.all.order("name")
     end
   end
 
