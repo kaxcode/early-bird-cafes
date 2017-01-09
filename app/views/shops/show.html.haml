@@ -19,6 +19,4 @@
   %dt Phone number:
   %dd= @shop.phone_number
   %dt Price:
-  %dd= @shop.price
-  %dt User:
-  %dd= @shop.user
+  %dd= price_as_symbol(@shop.price)

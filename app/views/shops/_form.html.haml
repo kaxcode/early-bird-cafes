@@ -31,7 +31,7 @@
     .col-sm-10
       = f.text_field :phone_number, class: 'form-control'
   .form-group
-    = f.label :price, class: 'col-sm-2 control-label'
+    = f.label :price, options_for_select(Shop::PRICES, @shop.price), class: 'form-control'
     .col-sm-10
       = f.number_field :price, class: 'form-control'
   .form-group

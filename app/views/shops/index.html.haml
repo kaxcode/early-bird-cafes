@@ -9,7 +9,8 @@
             %span.h3.shop_basic_info
               = shop.name
               = shop.address
-              = shop.price
+              Price:
+              = price_as_symbol(shop.price)
             %span.p.shop_info
-              Hours
+              Hours:
               = shop.hours

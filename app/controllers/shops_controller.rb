@@ -3,7 +3,11 @@ class ShopsController < ApplicationController
 
   # GET /shops
   def index
-    @shops = Shop.all
+    if params[:name].present?
+      @shops = Shop.where(name: params[:name])
+    else
+      @shops = Shop.all
+    end
   end
 
   # GET /shops/1
