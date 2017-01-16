@@ -4,8 +4,6 @@
       .col-sm-6.col-md-6.col-xs-6
         = link_to shop do
           .img-thumbnail{:style => "border:none; background:white;"}
-            %span.h3.shop_name_info
-              = shop.name
             .image-container.img_wrapper
               = image_tag attachment_url(shop, :cafe_image), size: "520x320"
               .shop_basic_info.hide
@@ -17,3 +15,7 @@
                 .h4
                   Hours:
                   = shop.hours
+            %span.h4.shop_name_info
+              = shop.name
+  .pagination-box
+    = paginate @shops, class:"page-numbers"
