@@ -1,3 +1,42 @@
-.pagination-box {
-  padding-left: 45%;
+.cafe-image {
+  border-radius: 3px;
 }
+
+.cover-box {
+  padding: 0px;
+}
+
+.img-thumbnail.shop-thumbnail {
+  padding: 0px;
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 90px;
+  }
+
+  .shop-thumbnail {
+    width: 140px;
+    height: 90px;
+    margin-bottom: -5px;
+  }
+
+  .shop-name-info {
+    font-size: 8px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 30%;
+  }
+}
+
+// @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+// /* Styles */
+// }
