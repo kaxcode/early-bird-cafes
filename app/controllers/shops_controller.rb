@@ -28,6 +28,9 @@ class ShopsController < ApplicationController
   # POST /shops
   def create
     @shop = Shop.new(shop_params)
+
+    Geocode.new(@shop).lookup
+
     @shop.user_id = logged_in?
 
     if @shop.save
@@ -41,6 +44,7 @@ class ShopsController < ApplicationController
   # def update
   #   @shop = Shop.find(params[:id])
   #   if @shop.update(shop_params)
+  #     Geocode.new(@shop).lookup
   #     redirect_to @shop, notice: 'Shop was successfully updated.'
   #   else
   #     render :edit

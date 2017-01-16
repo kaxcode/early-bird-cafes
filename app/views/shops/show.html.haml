@@ -26,3 +26,4 @@
       .img-thumbnail{:style => "border:none; background:white;"}
         .image-container.img
         = image_tag attachment_url(@shop, :cafe_image), size: "400x300"
+  = image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@shop.lat},#{@shop.lng}&markers=#{@shop.lat},#{@shop.lng}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8", class: "map"
