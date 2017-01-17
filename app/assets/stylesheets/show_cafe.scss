@@ -1,0 +1,198 @@
+/* iPhone 5 (portrait)----------- */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-height: 568px)
+  and (orientation: portrait) {
+  .shop-name-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .style-show-text {
+    font-size: 14px;
+  }
+
+  .show-shop-thumnail {
+    width: 280px;
+    height: 210px;
+  }
+
+  .show-cafe-image {
+    width: 280px;
+    height: 210px;
+  }
+
+  .map {
+    width: 285px;
+    height: 210px;
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+}
+
+/* iPhone 6 (portrait)----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-height: 667px)
+  and (orientation: portrait) {
+  .shop-name-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .style-show-text {
+    font-size: 15px;
+  }
+
+  .show-shop-thumnail {
+    width: 335px;
+    height: 265px;
+  }
+
+  .show-cafe-image {
+    width: 335px;
+    height: 265px;
+  }
+
+  .map {
+    width: 340px;
+    height: 265px;
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+}
+
+/* iPhone 6+ (portrait) ----------- */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-height: 736px)
+  and (orientation: portrait) {
+  .shop-name-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .style-show-text {
+    font-size: 15px;
+  }
+
+  .show-shop-thumnail {
+    width: 375px;
+    height: 305px;
+  }
+
+  .show-cafe-image {
+    width: 375px;
+    height: 305px;
+  }
+
+  .map {
+    width: 380px;
+    height: 305px;
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+  .shop-images-top-row {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0px;
+  }
+
+  .split-images {
+    width: 50%;
+  }
+
+  .shop-name-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .style-show-text {
+    font-size: 15px;
+  }
+
+  .show-shop-thumnail {
+    width: 330px;
+    height: 255px;
+  }
+
+  .show-cafe-image {
+    width: 330px;
+    height: 255px;
+  }
+
+  .map {
+    width: 325px;
+    height: 255px;
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+  and (min-width: 1224px) {
+  .shop-name-text {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .style-show-text {
+    font-size: 20px;
+  }
+
+  .show-shop-thumnail {
+    width: 550px;
+    height: 375px;
+  }
+
+  .show-cafe-image {
+    width: 550px;
+    height: 375px;
+  }
+
+  .map {
+    width: 545px;
+    height: 375px;
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-height: 640px)
+  and (orientation: portrait) {
+  .shop-name-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .style-show-text {
+    font-size: 15px;
+  }
+
+  .show-shop-thumnail {
+    width: 325px;
+    height: 250px;
+  }
+
+  .show-cafe-image {
+    width: 325px;
+    height: 250px;
+  }
+
+  .map {
+    width: 328px;
+    height: 250px;
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+}

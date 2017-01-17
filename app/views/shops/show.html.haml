@@ -1,12 +1,14 @@
-.container
-  .row
-    .col-xs-4.col-sm-4.col-md-4.col-sm-offset-1.col-md-offset-1
+.back-button.text-right
+  = link_to shops_path, class: 'btn btn-primary' do
+    Back
+
+.shop_content
+  .row.shop_content
+    .col-md-6.col-md-offset-3
       .panel.panel.default
-        = link_to shops_path, class: 'btn btn-primary' do
-          Back
-        .panel-heading.text-center.style-show-text
+        .panel-heading.text-center.shop-name-text
           =@shop.name
-        .ul.list-group.center.style-show-text
+        .ul.list-group.style-show-text
           .li.list-group-item
             Address:
             =@shop.address
@@ -22,8 +24,11 @@
           .li.list-group-item.style-show-text
             Price:
             = price_as_symbol(@shop.price)
-    .col-xs-6.col-sm-6.col-md-6
-      .img-thumbnail{:style => "border:none; background:white;"}
-        .image-container.img
-        = image_tag attachment_url(@shop, :cafe_image), size: "400x300"
-  = image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@shop.lat},#{@shop.lng}&markers=#{@shop.lat},#{@shop.lng}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8", class: "map"
+.image-map-box
+  .row.shop-images-top-row
+    .col-md-6.split-images
+      .img-thumbnail.show-shop-thumnail{:style => "border:none; background:white;"}
+        .show-img-container
+        = image_tag attachment_url(@shop, :cafe_image), class: "show-cafe-image"
+    .col-md-6.split-images
+      = image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@shop.lat},#{@shop.lng}&markers=#{@shop.lat},#{@shop.lng}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8", class: "map"
