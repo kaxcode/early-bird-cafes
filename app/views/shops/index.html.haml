@@ -1,7 +1,7 @@
 .container-fluid.container-listings
   .row
     - @shops.each do |shop|
-      .col-sm-6.col-md-6.col-xs-6.cover-box
+      .col-sm-6.col-md-6.cover-box
         = link_to shop do
           .img-thumbnail.shop-thumbnail{:style => "border:none; background:white;"}
             .image-container.img-wrapper

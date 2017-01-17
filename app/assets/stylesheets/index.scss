@@ -10,23 +10,60 @@
   padding: 0px;
 }
 
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+/* iPhone 5 (portrait)----------- */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-height: 568px)
+  and (orientation: portrait) {
   .cafe-image {
     position: relative;
     float: left;
-    width: 140px;
-    height: 90px;
+    width: 285px;
+    height: 210px;
   }
 
   .shop-thumbnail {
-    width: 140px;
-    height: 90px;
+    width: 285px;
+    height: 210px;
     margin-bottom: -5px;
   }
 
   .shop-name-info {
-    font-size: 8px;
+    font-size: 15px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 27%;
+  }
+
+  .pagination {
+    font-size: 15px;
+  }
+}
+
+/* iPhone 6 (portrait)----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-height: 667px)
+  and (orientation: portrait) {
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 265px;
+  }
+
+  .shop-thumbnail {
+    width: 340px;
+    height: 265px;
+    margin-bottom: -5px;
+  }
+
+  .shop-name-info {
+    font-size: 15px;
     padding: 0px;
     text-align: center;
     margin-bottom: 5px;
@@ -35,8 +72,180 @@
   .pagination-box {
     padding-left: 30%;
   }
+
+  .pagination {
+    font-size: 15px;
+  }
 }
 
-// @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-// /* Styles */
-// }
+/* iPhone 6+ (portrait) ----------- */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-height: 736px)
+  and (orientation: portrait) {
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 380px;
+    height: 280px;
+  }
+
+  .shop-thumbnail {
+    width: 380px;
+    height: 280px;
+    margin-bottom: -5px;
+  }
+
+  .shop-name-info {
+    font-size: 18px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 28%;
+  }
+
+  .pagination {
+    font-size: 18px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 250px;
+  }
+
+  .shop-thumbnail {
+    width: 350px;
+    height: 250px;
+    margin-bottom: -5px;
+  }
+
+  .shop-name-info {
+    font-size: 22px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 40%;
+  }
+
+  .pagination {
+    font-size: 20px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+  and (min-width: 1224px) {
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 350px;
+  }
+
+  .shop-thumbnail {
+    width: 500px;
+    height: 350px;
+    margin-bottom: -5px;
+  }
+
+  .shop-name-info {
+    font-size: 22px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 40%;
+  }
+
+  .pagination {
+    font-size: 20px;
+  }
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-height: 640px)
+  and (orientation: portrait) {
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 325px;
+    height: 220px;
+  }
+
+  .shop-thumbnail {
+    width: 325px;
+    height: 220px;
+    margin-bottom: -5px;
+  }
+
+  .shop-name-info {
+    font-size: 16px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 28%;
+  }
+
+  .pagination {
+    font-size: 16px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-height: 640px)
+  and (orientation: landscape) {
+  .row {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .cafe-image {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 230px;
+  }
+
+  .shop-thumbnail {
+    width: 290px;
+    height: 230px;
+    margin-bottom: -5px;
+    margin-left: 7px;
+  }
+
+  .shop-name-info {
+    font-size: 16px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .pagination-box {
+    padding-left: 28%;
+  }
+
+  .pagination {
+    font-size: 16px;
+  }
+}

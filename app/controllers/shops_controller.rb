@@ -4,9 +4,9 @@ class ShopsController < ApplicationController
   # GET /shops
   def index
     if params[:name].present?
-      @shops = Shop.where(id: params[:name])
+      @shops = Shop.where(id: params[:name]).page(params[:page]).per(4)
     else
-      @shops = Shop.all.page(params[:page]).per(25).order("name")
+      @shops = Shop.all.page(params[:page]).per(4).order("name")
     end
   end
 
