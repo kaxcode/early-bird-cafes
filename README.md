@@ -1,3 +1,6 @@
+# Early Bird Cafes
+To visit and play with my app, click here: https://warm-falls-60167.herokuapp.com/
+
 # Purpose #
 Create a rails app for a cafes in Lakeland/Tampa/St.Petersburg
 - - - - -
