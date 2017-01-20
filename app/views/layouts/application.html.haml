@@ -44,8 +44,8 @@
             -# %li.navbar-text
             = form_tag(shops_path, method: "GET") do
               .form-group
-                = select_tag :name, options_from_collection_for_select(Shop.all.order("name"), :id, :name), class: 'form-control'
-                = button_tag "Search", class: "btn btn-default"
+                = select_tag :price, options_for_select(Shop::PRICES, params[:price] ), class: 'form-control'
+                = button_tag "Search", class: "btn btn-warning"
     .container
       - flash.each do |name, msg|
         = content_tag :div, class: "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do

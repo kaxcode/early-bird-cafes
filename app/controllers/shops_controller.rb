@@ -3,10 +3,10 @@ class ShopsController < ApplicationController
 
   # GET /shops
   def index
-    if params[:name].present?
-      @shops = Shop.where(id: params[:name]).page(params[:page]).per(4)
+    if params[:price].present?
+      @shops = Shop.where(price: params[:price]).page(params[:page]).per(4)
     else
-      @shops = Shop.all.page(params[:page]).per(4).order("name")
+      @shops = Shop.all.page(params[:page]).per(4).order("price")
     end
   end
 
